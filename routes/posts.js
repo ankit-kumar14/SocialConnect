@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Post = require("../models/post");
+require("../db");
 const jwt = require("jsonwebtoken");
 const { generateUniqueId } = require("../helpers/uuid");
 const bcrypt = require("bcrypt");
